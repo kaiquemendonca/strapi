@@ -1,15 +1,15 @@
 module.exports = [
   'strapi::errors',
+  'strapi::security',
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000', 'https://cmt-tawny.vercel.app/'], 
+      origin: ['https://cmt-tawny.vercel.app'], // Permite requisições deste domínio
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
-      headers: ['Content-Type', 'Authorization'],
+      headers: '*',
       credentials: true,
     },
   },
-  'strapi::security',
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
