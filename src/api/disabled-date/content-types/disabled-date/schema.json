@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "disabled_dates",
+  "info": {
+    "singularName": "disabled-date",
+    "pluralName": "disabled-dates",
+    "displayName": "Disabled Date"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "tour": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tour.tour"
+    }
+  }
+}
