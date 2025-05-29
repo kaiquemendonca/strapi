@@ -16,6 +16,7 @@ module.exports = [
             "data:",
             "blob:",
             "https://cmt-tawny.vercel.app", // frontend em produção
+            'http://localhost:3000/',
             "https://strapi-n86r.onrender.com" // backend
           ],
         },
