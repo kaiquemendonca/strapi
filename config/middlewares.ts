@@ -4,7 +4,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://cmt-tawny.vercel.app' ], // Permite requisições deste domínio
+      origin: ['https://cmt-tawny.vercel.app', 'http://localhost:3000' ], // Permite requisições deste domínio
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       headers: '*',
       credentials: true,
@@ -16,7 +16,8 @@ module.exports = [
             "data:",
             "blob:",
             "https://cmt-tawny.vercel.app", // frontend em produção
-            "https://strapi-n86r.onrender.com" // backend
+            "http://localhost:3000", // frontend em produção
+            "https://strapi-production-1b18.up.railway.app" // backend
           ],
         },
       },
